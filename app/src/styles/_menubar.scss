@@ -1,0 +1,60 @@
+.menu-bar-container {
+  background-color: $white;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+
+  .logo{
+    background-color: $bege;
+    width: 256px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+
+    h3 {
+    padding: 16px;
+    color: $white;
+    font-size: 36px;
+    }
+  }
+
+  .menu-list {
+    display: flex;
+    flex-grow: 1;
+    ul {
+      display: flex;
+			li {
+        margin-left: 72px;
+				a {
+					text-decoration: none;
+					font-size: 16px;
+					color: $black;
+					font-weight: 700;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    input {
+      border: none;
+      border-bottom: 1px solid;
+      width: 88px;
+    }
+    button {
+			font-size: 16px;
+			font-weight: 700;
+			padding: 11px 12px;
+			border: none;
+      background-color: $white;
+      margin-right: 88px;
+		}
+  }
+}
